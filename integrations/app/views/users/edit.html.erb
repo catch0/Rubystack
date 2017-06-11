@@ -1,0 +1,12 @@
+<h2> Edit this shit </h2>
+
+<form action = '/users' method = 'post'>
+<input name = "authenticity_token" value="<%=
+        form_authenticity_token %>" type = "hidden">
+<input type = "text" name ="first_name" placeholder = '<%= User.first.first_name %>'>
+<input type = "text" name ="first_name" placeholder = '<%= User.first.last_name %>'>
+<input type = "text" name ="age" placeholder = '<%= User.first.age %>'>
+
+
+
+</form>
