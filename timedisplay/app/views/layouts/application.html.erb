@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timedisplay</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1> Current Date and Time</h1>
+<p> <%= @date.strftime("%B %d, %Y") %> </p>
+<p> <%= @time.strftime("%H:%M") %> </p>
+</body>
+</html>

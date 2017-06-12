@@ -1,0 +1,8 @@
+<h1> Sup? Here's that stuff you just submitted</h1>
+<h3> You have submitted this stuff <%= Student.all.count %> times </h3>
+<h4> Submitted Information </h4>
+<p> Name: <%= @student.name %></p>
+<p> Location: <%= @student.location %></p>
+<p> Language: <%= @student.language %></p>
+<p> Comment: <%= @student.comment %> </p>
+<button action="/" method="get"> Go Back</button>
