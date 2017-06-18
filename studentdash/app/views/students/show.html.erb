@@ -1,0 +1,20 @@
+<h1> Showing <%= @student.branch %>'s <%= @student.first_name %> </h1>
+<p> Email: <%= @student.email %> </p>
+<h2> <%= @student.first_name %>'s Cohort</h2>
+<table>
+<th>
+    <tr> 
+    <td> First Name </td>
+    <td> Last Name </td>
+    <td> Email </td>
+    <tr> 
+</th>
+    <% @cohort.each do |cohort| %>
+    <tr>
+    <td> <%= cohort.first_name %></td>
+    <td> <%= cohort.last_name %> </td>
+    <td> <%= cohort.email %> </td>
+    </tr>
+    <% end %>
+</table>
+<%= link_to "Back", root_path %>
